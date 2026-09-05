@@ -62,11 +62,7 @@ const workerConfig: WorkerConfig = {
 
 // const maintenances: MaintenanceConfig[] = []
 
-const maintenances: MaintenanceConfig[] = [
-  {
-
-  },
-]
+const maintenances: MaintenanceConfig[] = []
 
 // Don't edit this line
 export { maintenances, pageConfig, workerConfig }
