@@ -10,42 +10,46 @@ const pageConfig: PageConfig = {
   title: "VoidCat 服务状态",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/wumingshiali', label: 'GitHub' },
+    { link: 'https://github.com/wumingshiali', label: 'GitHub', highlight: true },
     { link: 'https://meali.top/posts', label: 'Blog', highlight: true },
-    { link: 'mailto:ZWj1154142014@hotmail.com', label: 'Email Me', highlight: true },
+    { link: 'mailto:ZWj1154142014@hotmail.com', label: 'Email Me'},
   ],
 }
 
 const workerConfig: WorkerConfig = {
   // Define all your monitors here
   monitors: [
-    // Example HTTP Monitor
     {
-      // `id` should be unique, history will be kept if the `id` remains constant
       id: 'p_web',
-      // `name` is used at status page and callback message
-      name: ' 个人网站',
-      // `method` should be a valid HTTP Method
+      name: '个人网站',
       method: 'GET',
-      // `target` is a valid URL
       target: 'https://meali.top',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://meali.top',
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
-      // [OPTIONAL] headers to be sent
-      // [OPTIONAL] body to be sent (require POST/PUT/PATCH method)
-      // body: 'Hello, world!',
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      // responseKeyword: 'success',
-      // [OPTIONAL] if specified, the response must NOT contains the keyword to be considered as operational.
-      // responseForbiddenKeyword: 'bad gateway',
-      // [OPTIONAL] if specified, will call the check proxy to check the monitor, mainly for geo-specific checks
-      // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Check-proxy-setup before setting this value
-      // currently supports `worker://`, `globalping://` and `http(s)://` proxies
-      // checkProxy: 'worker://weur',
-      // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
-      // checkProxyFallback: true,
+    },
+    {
+      id: 'tjl',
+      name: '通缉令生成器',
+      method: 'GET',
+      target: 'https://tjl.meali.top',
+      statusPageLink: 'https://tjl.meali.top',
+      timeout: 10000,
+    },
+    {
+      id: 'tg',
+      name: '文字渲染器',
+      method: 'GET',
+      target: 'https://tg.meali.top',
+      statusPageLink: 'https://tg.meali.top',
+      timeout: 10000,
+    },
+    {
+      id: 'breaking-fake-news',
+      name: '爆炸假新闻',
+      method: 'GET',
+      target: 'https://breaking-fake-news.meali.top',
+      statusPageLink: 'https://breaking-fake-news.meali.top',
+      timeout: 10000,
     },
   ],
   // [Optional] Notification settings
