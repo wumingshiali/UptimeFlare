@@ -51,6 +51,14 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://breaking-fake-news.meali.top',
       timeout: 10000,
     },
+    {
+      id: 'openlist',
+      name: 'Openlist',
+      method: 'GET',
+      target: 'https://ol.meali.top',
+      statusPageLink: 'https://ol.meali.top',
+      timeout: 10000,
+    },
   ],
   // [Optional] Notification settings
   notification: {
