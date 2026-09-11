@@ -59,6 +59,13 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://ol.meali.top',
       timeout: 10000,
     },
+    {
+      id: 'umami',
+      name: 'Umami',
+      method: 'GET',
+      target: 'https://umi.meali.top',
+      timeout: 10000,
+    },
   ],
   // [Optional] Notification settings
   notification: {
