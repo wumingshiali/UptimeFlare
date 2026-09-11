@@ -83,7 +83,7 @@ const workerConfig: WorkerConfig = {
 
 const maintenances: MaintenanceConfig[] = [
   {
-    monitor: ["umami"],
+    monitors: ["umami"],
     title: "Umami 严重事故",
     body: "此次事故的原因是尝试给使用 Edgeone 部署的 Umami 添加 Cloudflare 代理，由于两边都配置了 https 重定向导致无限重定向",
     start: "2026-09-11T17:04:00+08:00",
