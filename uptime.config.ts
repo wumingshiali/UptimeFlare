@@ -96,7 +96,7 @@ const maintenances: MaintenanceConfig[] = [
     body: "Openlist 需要更换后端，因 DNS 生效 24 小时影响，所以服务最多 24 小时不可用",
     start: "2026-10-09T17:25:00+08:00",
     end: "2026-10-10T18:25:00+08:00",
-    color: "blue""
+    color: "blue"
   }
 ]
 
