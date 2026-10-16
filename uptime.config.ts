@@ -71,6 +71,7 @@ const workerConfig: WorkerConfig = {
       name: 'Github加速',
       method: 'GET',
       target: 'https://gh.meali.top',
+      statusPageLink: 'https://gh.meali.top',
       timeout: 10000,
     },
   ],
