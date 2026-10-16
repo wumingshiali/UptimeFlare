@@ -73,6 +73,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://gh.meali.top',
       statusPageLink: 'https://gh.meali.top',
       timeout: 10000,
+      expectedCodes: [200,403],
     },
   ],
   // [Optional] Notification settings
