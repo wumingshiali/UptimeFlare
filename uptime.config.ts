@@ -66,6 +66,13 @@ const workerConfig: WorkerConfig = {
       target: 'https://umi.meali.top',
       timeout: 10000,
     },
+    {
+      id: 'ghacc',
+      name: 'Github加速',
+      method: 'GET',
+      target: 'https://gh.meali.top',
+      timeout: 10000,
+    },
   ],
   // [Optional] Notification settings
   notification: {
