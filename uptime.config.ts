@@ -26,6 +26,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://meali.top',
       statusPageLink: 'https://meali.top',
       timeout: 10000,
+      checkProxy: 'worker://apac-ne'
     },
     {
       id: 'tjl',
@@ -34,6 +35,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://tjl.meali.top',
       statusPageLink: 'https://tjl.meali.top',
       timeout: 10000,
+      checkProxy: 'worker://apac-ne'
     },
     {
       id: 'tg',
@@ -42,6 +44,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://tg.meali.top',
       statusPageLink: 'https://tg.meali.top',
       timeout: 10000,
+      checkProxy: 'worker://apac-ne'
     },
     {
       id: 'breaking-fake-news',
@@ -50,6 +53,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://breaking-fake-news.meali.top',
       statusPageLink: 'https://breaking-fake-news.meali.top',
       timeout: 10000,
+      checkProxy: 'worker://apac-ne'
     },
     {
       id: 'openlist',
@@ -58,6 +62,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://ol.meali.top',
       statusPageLink: 'https://ol.meali.top',
       timeout: 10000,
+      checkProxy: 'worker://apac-ne'
     },
     {
       id: 'umami',
@@ -65,6 +70,7 @@ const workerConfig: WorkerConfig = {
       method: 'GET',
       target: 'https://umi.meali.top',
       timeout: 10000,
+      checkProxy: 'worker://apac-ne'
     },
     {
       id: 'ghacc',
@@ -74,6 +80,7 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://gh.meali.top',
       timeout: 10000,
       expectedCodes: [200,403],
+      checkProxy: 'worker://apac-ne'
     },
   ],
   // [Optional] Notification settings
